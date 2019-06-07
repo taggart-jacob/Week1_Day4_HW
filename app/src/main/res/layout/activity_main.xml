@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:background="drawable/shape"
+        android:layout_above="@+id/topView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+    <GridLayout
+        android:id="@+id/topView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true"
+        android:layout_gravity="center">
+
+        <Button
+            android:background="drawable/shape"
+            android:text="C"
+            android:id="@+id/clear"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="^2"
+            android:id="@+id/square"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="sq.rt"
+            android:id="@+id/squareRoot"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="+"
+            android:id="@+id/plus"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="7"
+            android:id="@+id/seven"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="8"
+            android:id="@+id/eight"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="9"
+            android:id="@+id/nine"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="-"
+            android:id="@+id/minus"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="4"
+            android:id="@+id/four"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="5"
+            android:id="@+id/five"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="6"
+            android:id="@+id/six"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="x"
+            android:id="@+id/multiply"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="1"
+            android:id="@+id/one"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="2"
+            android:id="@+id/two"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="3"
+            android:id="@+id/three"/>
+
+        <Button
+            android:background="drawable/shape"
+            android:text="/"
+            android:id="@+id/divide"/>
+        <Button
+            android:background="drawable/shape"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="2"
+            android:text="0"
+            android:id="@+id/zero"/>
+        <Button
+            android:background="drawable/shape"
+            android:text="."
+            android:id="@+id/point"/>
+        <Button
+            android:background="drawable/shape"
+            android:layout_gravity="fill_vertical"
+            android:text="="
+            android:id="@+id/equals"/>
+
+    </GridLayout>
+
+</RelativeLayout>
