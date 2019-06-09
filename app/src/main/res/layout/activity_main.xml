@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,118 +8,122 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:background="drawable/shape"
-        android:layout_above="@+id/topView"
-        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:id="@+id/viewResult"
+        android:textSize="60.dip"
+        android:text="Result"
+
         />
-    <GridLayout
-        android:id="@+id/topView"
-        android:layout_width="fill_parent"
+    <TextView
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/viewCalculate"
+        android:text="Calculate"
+        android:textSize="45.dip"
+        android:layout_below="@id/viewResult"
+        />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:columnCount="4"
-        android:rowCount="5"
         android:orientation="horizontal"
-        android:useDefaultMargins="true"
-        android:layout_gravity="center">
+        android:rowCount="5"
+        android:layout_alignParentBottom="true"
+        android:useDefaultMargins="true">
 
         <Button
-            android:background="drawable/shape"
-            android:text="C"
-            android:id="@+id/clear"/>
-
+            android:id="@+id/btn7"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="7" />
         <Button
-            android:background="drawable/shape"
-            android:text="^2"
-            android:id="@+id/square"/>
-
+            android:id="@+id/btn8"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="8" />
         <Button
-            android:background="drawable/shape"
-            android:text="sq.rt"
-            android:id="@+id/squareRoot"/>
-
+            android:id="@+id/btn9"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="9" />
         <Button
-            android:background="drawable/shape"
-            android:text="+"
-            android:id="@+id/plus"/>
-
+            android:id="@+id/btnAdd"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="+" />
         <Button
-            android:background="drawable/shape"
-            android:text="7"
-            android:id="@+id/seven"/>
-
+            android:id="@+id/btn4"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="4" />
         <Button
-            android:background="drawable/shape"
-            android:text="8"
-            android:id="@+id/eight"/>
-
+            android:id="@+id/btn5"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="5" />
         <Button
-            android:background="drawable/shape"
-            android:text="9"
-            android:id="@+id/nine"/>
-
+            android:id="@+id/btn6"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="6" />
         <Button
-            android:background="drawable/shape"
-            android:text="-"
-            android:id="@+id/minus"/>
-
+            android:id="@+id/btnMin"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="-" />
         <Button
-            android:background="drawable/shape"
-            android:text="4"
-            android:id="@+id/four"/>
-
+            android:id="@+id/btn1"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="1" />
         <Button
-            android:background="drawable/shape"
-            android:text="5"
-            android:id="@+id/five"/>
-
+            android:id="@+id/btn2"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="2" />
         <Button
-            android:background="drawable/shape"
-            android:text="6"
-            android:id="@+id/six"/>
-
+            android:id="@+id/btn3"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="3" />
         <Button
-            android:background="drawable/shape"
-            android:text="x"
-            android:id="@+id/multiply"/>
-
+            android:id="@+id/btnMul"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="*" />
         <Button
-            android:background="drawable/shape"
-            android:text="1"
-            android:id="@+id/one"/>
-
+            android:id="@+id/btnDecimal"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="." />
         <Button
-            android:background="drawable/shape"
-            android:text="2"
-            android:id="@+id/two"/>
-
+            android:id="@+id/btn0"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="0" />
         <Button
-            android:background="drawable/shape"
-            android:text="3"
-            android:id="@+id/three"/>
-
+            android:id="@+id/btnDiv"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="/" />
         <Button
-            android:background="drawable/shape"
-            android:text="/"
-            android:id="@+id/divide"/>
-        <Button
-            android:background="drawable/shape"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnSpan="2"
-            android:text="0"
-            android:id="@+id/zero"/>
-        <Button
-            android:background="drawable/shape"
-            android:text="."
-            android:id="@+id/point"/>
-        <Button
-            android:background="drawable/shape"
+            android:id="@+id/btnClear"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_rowSpan="2"
             android:layout_gravity="fill_vertical"
-            android:text="="
-            android:id="@+id/equals"/>
-
+            android:text="CLEAR" />
+        <Button
+            android:id="@+id/btnEnter"
+            android:background="@android:color/holo_orange_dark"
+            android:text="ENTER"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="3"
+            />
     </GridLayout>
-
 </RelativeLayout>
