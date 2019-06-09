@@ -313,11 +313,11 @@ Solution:
         }
     }
     }
-Upon opening:
+1)Upon opening
+2)Equation based on buttons clicked
+3)After Enter is pressed
+4)After Clear is pressed
 ![Screen Shot 2019-06-09 at 12 32 34 PM](https://user-images.githubusercontent.com/51377398/59161605-ff16b200-8ab2-11e9-9aa8-dca7ff0de60d.png)
-Equation based on button clicked
 ![Screen Shot 2019-06-09 at 12 32 58 PM](https://user-images.githubusercontent.com/51377398/59161606-ff16b200-8ab2-11e9-8718-9e3f416f611d.png)
-After Enter is pressed
 ![Screen Shot 2019-06-09 at 12 33 18 PM](https://user-images.githubusercontent.com/51377398/59161607-ff16b200-8ab2-11e9-9771-87447fffdbbb.png)
-After Clear is pressed
 ![Screen Shot 2019-06-09 at 12 33 31 PM](https://user-images.githubusercontent.com/51377398/59161608-ff16b200-8ab2-11e9-8743-07797467c0cd.png)
